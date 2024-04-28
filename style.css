@@ -1,0 +1,146 @@
+:root {
+    --Red-color: hsl(1, 90%, 64%);
+    --Blue-color: hsl(219, 85%, 26%);
+    --White-color: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue-color: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue-color: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", "sans-serif";
+    background-color: var(--Very-light-grayish-blue-color);
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    background-color: var(--White-color);
+    margin: 2rem auto;
+    width: 600px;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+}
+
+.notifications {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1rem;
+}
+
+.notifications .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    font-weight: 800;
+}
+
+.notifications h3 {
+    text-transform: capitalize;
+    margin-right: 1rem;
+}
+
+.notifications .box span {
+
+    background-color: var(--Blue-color);
+    color: var(--White-color);
+    border-radius: 0.5rem;
+    width: 35px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    font-weight: 800;
+    padding: 0.5rem;
+}
+
+.notifications #mark-all {
+    cursor: pointer;
+}
+
+.notifications #mark-all:hover {
+    color: var(--Blue-color);
+}
+
+img {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.mark,
+.angela,
+.jacob,
+.rizky,
+.kimberly,
+.nathan,
+.anna {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 10px;
+    color: var(--Dark-grayish-blue);
+    border-radius: 10px;
+}
+
+.read {
+    background-color: var(--Very-light-grayish-blue-color);
+} 
+
+.read p:first-of-type::after {
+    content: "";
+    background-color: var(--Red-color);
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-top: 3px;
+}
+
+strong {
+    color: var(--Very-dark-blue);
+    cursor: pointer;
+}
+
+strong:hover {
+    color: var(--Blue-color);
+}
+.rizky-description p:last-child {
+    cursor: pointer;
+    padding: 1rem 1rem;
+    background-color: var(--Light-grayish-blue-1);
+    border-radius: 10px;
+    margin: 1rem 0rem;
+}
+
+
+#chess-img{margin-left: auto;}
+
+@media (max-width:550px) {
+    .content {
+        margin: 0;
+    }
+
+}
+@media (max-width:350px) {
+    .notifications .box span {
+        margin-left: -10px;
+        padding: 0;
+    }
+    
+}
